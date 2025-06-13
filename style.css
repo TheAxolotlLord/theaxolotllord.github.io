@@ -3,21 +3,63 @@
 body {
     background: linear-gradient(19deg, #ffa3eb 0%, #d790fe 100%);
     min-height: 100vh;
-    justify-content: center;
-    vertical-align: middle;
-    align-items: center;
-    align-self: center;
-    align-content: center;
+    margin: 0vh;
 }
 
 h1 {
+    color: white;
     font-family: Kalam, cursive;
-    text-align: center;
-    margin: 0%;
 }
 
 h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
     text-align: center;
-    margin: 0%;
+    margin: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(169, 94, 184);
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li {
+    vertical-align: middle;
+    display: inline;
+    list-style: none;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+a:hover:not(.active) {
+    color: #b9b9b9;
+}
+  
+.nav-links li {
+    color: #494949;
+}
+
+a.active {
+    color: #494949;
+}
+
+a:hover.active {
+    color: #000000;
 }
