@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lexend:wght@100..900&family=Stalinist+One&display=swap');
 
 body {
-    background: linear-gradient(19deg, #ffa3eb 0%, #d790fe 100%);
+    background: rgb(13, 17, 23);
     min-height: 100vh;
     margin: 0vh;
 }
@@ -23,7 +23,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgb(169, 94, 184);
+  background-color: rgb(0, 0, 0);
   font-family: "Montserrat", sans-serif;
 }
 
