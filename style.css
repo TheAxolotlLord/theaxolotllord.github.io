@@ -19,6 +19,14 @@ h3 {
     margin: 20px;
 }
 
+p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-self: center;
+    text-align: center;
+    margin: 14px;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -64,3 +72,4 @@ a.active {
 a:hover.active {
     color: #000000;
 }
+
