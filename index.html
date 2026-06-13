@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
     <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="shortcut icon" href="img/favicon_tal.png" type="image/x-icon">
 </head>
+
 <body>
+    <!-- This is the navagation bar. -->
     <nav>
         <div class="header">
             <h1>TheAxolotlLord</h1>        
@@ -17,7 +20,7 @@
         <ul class="social-links">
             <li><a href="./index"><span class="material-icons">home</span></a></li>
             <li><a href="https://youtube.com/@realaxolotllord"><span class="material-icons">smart_display</span></a></li>
-            <li><a href="./please-add-dark-mode-comma-it-really-would-be-helpful"><span class="material-icons">dark_mode</span></a></li>
+            <li><a onclick="darkMode();"><span class="material-icons">dark_mode</span></a></li>
         </ul>
     </nav>
     <br>
@@ -30,17 +33,62 @@
     <h2>Quick Links</h2>
     <br>
     <div class="quicklinks" width="80%" height="50vh" style="text-align: center;">
-        <button onclick="gdColon();" >GD Colonge</button>
-        <button onclick="neal();" >Neal.fun</button>
+        <button class="quickbutton" onclick="music();" >Music Randomizer</button>
+        <button class="quickbutton" onclick="gdColon();" >GD Colonge</button>
+        <button class="quickbutton" onclick="neal();" >Neal.fun</button>
     </div>
     <br>
 </body>
 </html>
+
 <script>
-   function gdColon(){
-       window.location='https://gdcolon.com';
-   }
-   function neal(){
-       window.location='https://neal.fun';
-   }
+    let darkModeClicks = 0;
+    function gdColon(){
+        window.location='https://gdcolon.com';
+    }
+    function neal(){
+        window.location='https://neal.fun';
+    }
+    function music(){
+        window.location="./music_randomizer.html";
+    }
+    function darkMode(){
+        if (darkModeClicks == 0) {
+            alert("Ahaha! I'm not adding light mode, fool.")
+        };
+        if (darkModeClicks == 1) {
+            alert("Nice try, not happening!")
+        };
+        if (darkModeClicks == 2) {
+            alert("I said it's not happening.")
+        };
+        if (darkModeClicks == 3) {
+            alert("Stop that, it's not going to happen.")
+        };
+        if (darkModeClicks == 3) {
+            alert("Fine. Click again for light mode.")
+        };
+        if (darkModeClicks == 4) {
+            alert("PSYCH! Not happening THAT easy.")
+        };
+        if (darkModeClicks == 5) {
+            alert("Alright, you can go away now.")
+        };
+        if (darkModeClicks == 6) {
+            alert("Cars 2.")
+        };
+        if (darkModeClicks == 7) {
+            alert("A job.")
+        };
+        if (darkModeClicks == 8) {
+            alert("How are you not scared? That normally works.")
+        };
+        if (darkModeClicks == 9) {
+            alert("I don't have all the time in the world. Now good day.")
+        };
+        if (darkModeClicks > 10) {
+            alert("Stop.")
+        }
+        darkModeClicks++;
+    }
 </script>
