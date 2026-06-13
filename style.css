@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lexend:wght@100..900&family=Stalinist+One&display=swap');
 
 body {
-    background: rgb(13, 17, 23);
+    background: linear-gradient(50deg, #0D1117 0%, #131a22 100%);
     min-height: 100vh;
     margin: 0vh;
 }
@@ -24,7 +24,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgb(0, 0, 0);
+  background: linear-gradient(-50deg, #0d1015 0%, #000000 100%);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -64,6 +64,10 @@ a.active {
     color: #494949;
 }
 
+span {
+    cursor: pointer;
+}
+
 a:hover.active {
     color: #000000;
 }
@@ -91,6 +95,51 @@ a:hover.active {
     padding-top: 0%; 
     margin: 0 auto;
     overflow: auto; 
+    animation: videoAnimation 1s ease 0s 1 normal forwards;
+}
+
+@keyframes videoAnimation {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
 }
 
 @media (max-width: 768px) {
