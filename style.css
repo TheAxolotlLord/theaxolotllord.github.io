@@ -28,6 +28,10 @@ nav {
   font-family: "Montserrat", sans-serif;
 }
 
+.material-icons {
+  font-size: 200%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -45,13 +49,7 @@ ul {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
-    transtion: font-size 0.5s ease 0s;
     padding: 14px 16px;
-}
-
-.social-links a:hover {
-    font-size: 19px;
 }
 
 a:hover:not(.active) {
@@ -70,7 +68,7 @@ a:hover.active {
     color: #000000;
 }
 
-button {
+.quickbutton {
     border: none;
     text-decoration: none;
     background-color: rgba(117, 142, 255, 0.644);
@@ -86,14 +84,24 @@ button {
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
 }
 
-.video {
+.video iframe {
     position: relative;
     width: 50vw;
-    max-width: 75vw;
-    padding-top: 27%; 
-    height: 0; 
+    aspect-ratio: 16 / 9;
+    padding-top: 0%; 
     margin: 0 auto;
-    overflow: hidden; 
+    overflow: auto; 
+}
+
+@media (max-width: 768px) {
+    .video iframe {
+        width: 80vw;
+    }
+    
+    h1 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 .youtube {
