@@ -19,6 +19,16 @@ h3, h2, p {
     margin: 20px;
 }
 
+p {
+    white-space: pre-line;
+    font-size: 115%;
+}
+
+audio {
+    display: table;
+    margin: 0 auto;
+}
+
 nav {
   display: flex;
   justify-content: space-around;

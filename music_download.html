@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Randomizer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/favicon_tal.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <h1>TheAxolotlLord</h1>        
+        </div> 
+        <ul class="social-links">
+            <li><a href="./index"><span class="material-icons">home</span></a></li>
+            <li><a href="./music_download"><span class="material-icons">music_note</span></a></li>
+            <li><a href="https://youtube.com/@realaxolotllord"><span class="material-icons">smart_display</span></a></li>
+            <li><a onclick="darkMode();"><span class="material-icons">dark_mode</span></a></li>
+        </ul>
+    </nav>
+    <br>
+        <h1 style="text-align: center;">Download Music</h1>
+        <p>This is this official place to download all of the music I produce, 
+            because most of my future songs will go here instead of my YouTube channel.</p>
+        <p>Note: All Items on this page are © <script>document.write(new Date().getFullYear())</script> by TheAxolotlLord, and licensed under CC BY 4.0, unless otherwise stated. 
+            To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/.
+            Basically, that means, <strong>CREDIT ME! And that's it!</strong></p>
+        <br>
+
+        <!-- Songs -->
+         <h2>Dropkick Songy Song - 2026</h2>
+        <audio controls>
+            <source src="audio/Dropkick Songy Song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br>
+        <h2>Frolicks Gently - 2026</h2>
+        <audio controls>
+            <source src="audio/Frolicks Gently - Medium.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br>
+        <h2>Biannual Celebration - 2026</h2>
+        <audio controls>
+            <source src="audio/Biannual Celebration (in C minor).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br>
+        <h2>Bowl of Guacamole - 2025</h2>
+        <audio controls>
+            <source src="audio/Bowl of Guacamole.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    <br>
+</body>
+</html>
+
+<script>
+    let darkModeClicks = 0;
+    function darkMode(){
+        if (darkModeClicks == 0) {
+            alert("Try again on the main page.")
+        }
+        if (darkModeClicks >= 1) {
+            alert("Stop it! Go!")
+        }
+        darkModeClicks++;
+    }
+</script>
